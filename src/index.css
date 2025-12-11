@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 15% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 12% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 12% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 260 60% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 240 8% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 280 50% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 240 10% 18%;
+    --input: 240 10% 18%;
+    --ring: 260 60% 60%;
+
+    --radius: 0.75rem;
+
+    --luxury-purple: 260 60% 60%;
+    --luxury-pink: 280 50% 55%;
+    --luxury-glow: 260 70% 70%;
+    --dark-surface: 240 12% 10%;
+    --gradient-start: 240 15% 5%;
+    --gradient-end: 240 10% 12%;
+    --success: 142 76% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Bento Grid Styles */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, minmax(150px, auto));
+  gap: 1rem;
+  width: 100%;
+}
+
+.bento-item {
+  position: relative;
+  padding: 1.5rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border) / 0.5);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bento-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    hsl(var(--primary) / 0.15),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.bento-item:hover::before {
+  opacity: 1;
+}
+
+.bento-item:hover {
+  border-color: hsl(var(--primary) / 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  
+  .bento-item {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
