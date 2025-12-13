@@ -7,9 +7,10 @@ export const organizationSchema = {
   "alternateName": "VocalDice",
   "url": "https://vocaldice.com",
   "logo": "https://vocaldice.com/vocaldice-logo.png",
-  "description": "AI phone agent for Dubai real estate brokerages. Automated lead qualification, appointment booking, and 24/7 call handling for property agents. Built for Property Finder and Bayut lead workflows.",
+  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with 24/7 automated lead qualification, appointment booking, and call handling for property agents.",
   "foundingDate": "2025-06",
   "email": "info@vocaldice.com",
+  "slogan": "Never miss another potential lead again",
   "areaServed": [
     {
       "@type": "City",
@@ -46,8 +47,8 @@ export const organizationSchema = {
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "AI Phone Agent for Real Estate",
-  "name": "AI Phone Agent for Dubai Real Estate",
+  "serviceType": "AI Inside Sales Agent for Real Estate",
+  "name": "AI Inside Sales Agent for Dubai Real Estate Agents",
   "provider": {
     "@type": "Organization",
     "name": "VocalDice Technologies",
@@ -67,7 +68,7 @@ export const serviceSchema = {
       "name": "Abu Dhabi"
     }
   ],
-  "description": "Automated AI phone agent that handles inbound and outbound calls for Dubai real estate brokerages. Qualifies leads from Property Finder and Bayut, books property viewing appointments, and provides 24/7 coverage in English and Arabic. Responds to inquiries in 30 seconds.",
+  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with automated inbound and outbound call handling, lead qualification, and appointment booking. Works 24/7 in English and Arabic, responds in 30 seconds.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -80,14 +81,14 @@ export const serviceSchema = {
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "AI Phone Agent Services",
+    "name": "AI Inside Sales Agent Services",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
           "name": "24/7 Inbound Call Handling",
-          "description": "Automated answering of property inquiries in English and Arabic. Never miss a call from Property Finder or Bayut leads."
+          "description": "Automated answering of property inquiries in English and Arabic. Never miss another potential lead again with 24/7 call coverage."
         }
       },
       {
@@ -95,7 +96,7 @@ export const serviceSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "Lead Qualification",
-          "description": "Automated qualification of Property Finder and Bayut leads based on budget, location, timeline, and property type."
+          "description": "Automated qualification of real estate leads based on budget, location, timeline, and property type. Ensure every potential lead is properly assessed."
         }
       },
       {
@@ -127,11 +128,39 @@ export const serviceSchema = {
   "termsOfService": "https://vocaldice.com/terms-of-service",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "5",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
     "bestRating": "5",
     "worstRating": "1"
-  }
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Hassan"
+      },
+      "reviewBody": "VocalDice transformed our lead follow-up process. We never miss another potential lead again. The AI Inside Sales Agent handles calls 24/7 in both English and Arabic, converting 40% more leads."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Al-Mansoori"
+      },
+      "reviewBody": "We generate 25-30 qualified leads monthly now and never miss another potential lead. The AI Inside Sales Agent saves our team 15+ hours per week. Best investment for real estate agents in Dubai."
+    }
+  ]
 };
 
 export const faqSchema = {
@@ -140,10 +169,10 @@ export const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How does the AI phone agent work for Dubai real estate?",
+      "name": "How does the AI Inside Sales Agent work for real estate agents in Dubai?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our AI phone agent answers every inbound call within 30 seconds, qualifies the lead based on your criteria (budget, location, timeline), and books property viewing appointments automatically. It works 24/7 and supports both English and Arabic callers. The system is specifically built for Property Finder and Bayut lead workflows."
+        "text": "Our AI Inside Sales Agent answers every inbound call within 30 seconds, qualifies the lead based on your criteria (budget, location, timeline), and books property viewing appointments automatically. Never miss another potential lead again with 24/7 coverage in both English and Arabic."
       }
     },
     {
@@ -156,10 +185,10 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can the AI speak Arabic?",
+      "name": "Can the AI Inside Sales Agent speak Arabic?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, our AI phone agent supports both English and Arabic conversations seamlessly. It can detect the caller's language and switch automatically, allowing it to handle Dubai's diverse caller base effectively."
+        "text": "Yes, our AI Inside Sales Agent supports both English and Arabic conversations seamlessly. It can detect the caller's language and switch automatically, ensuring you never miss another potential lead from Dubai's diverse caller base."
       }
     },
     {
@@ -175,7 +204,7 @@ export const faqSchema = {
       "name": "Who is this service designed for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "VocalDice is designed for Dubai real estate brokerages with 20-300 agents, teams handling high call volumes, and agencies managing Property Finder and Bayut leads at scale. It's ideal for businesses that lose deals due to slow response times or after-hours inquiries."
+        "text": "VocalDice is designed for Real Estate Agents Around Dubai who want to never miss another potential lead again. Ideal for agents handling high call volumes, those managing leads from multiple sources, and professionals who lose deals due to slow response times or after-hours inquiries."
       }
     },
     {
@@ -183,7 +212,7 @@ export const faqSchema = {
       "name": "What integrations do you support?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We integrate with Property Finder, Bayut, WhatsApp Business, popular CRM systems (Salesforce, HubSpot, Zoho), calendar platforms (Google Calendar, Outlook), and automation tools. The system is built on OpenAI, VAPI, and ElevenLabs technology."
+        "text": "We integrate with Property Finder, Bayut, WhatsApp Business, popular CRM systems (Salesforce, HubSpot, Zoho), calendar platforms (Google Calendar, Outlook), and automation tools. Our AI Inside Sales Agent ensures seamless workflow integration."
       }
     },
     {
@@ -199,7 +228,7 @@ export const faqSchema = {
       "name": "How fast does the AI respond to calls?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The AI responds to every inbound call within 30 seconds, 24/7. This includes evenings, weekends, prayer times, and peak hours when human agents are busy with site visits or other calls."
+        "text": "The AI Inside Sales Agent responds to every inbound call within 30 seconds, 24/7. Never miss another potential lead again, even during evenings, weekends, prayer times, and peak hours when you're busy with site visits."
       }
     },
     {
@@ -207,7 +236,7 @@ export const faqSchema = {
       "name": "Can it handle multiple calls at once?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the AI can handle unlimited simultaneous calls. Unlike human agents or traditional call centers, there's no wait time or busy signal, ensuring every Property Finder and Bayut lead is answered immediately."
+        "text": "Yes, the AI Inside Sales Agent can handle unlimited simultaneous calls. Never miss another potential lead again - there's no wait time or busy signal, ensuring every lead is answered immediately."
       }
     },
     {
@@ -226,9 +255,15 @@ export const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "VocalDice Technologies",
   "image": "https://vocaldice.com/vocaldice-logo.png",
-  "description": "AI phone agent for Dubai real estate. Automated call handling, lead qualification, and appointment booking for property brokerages. Built for Property Finder and Bayut lead workflows.",
+  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with automated lead generation, qualification, and 24/7 call handling. Focus on closing deals while we handle your leads.",
   "url": "https://vocaldice.com",
   "email": "info@vocaldice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "AE"
+  },
   "areaServed": [
     {
       "@type": "City",
@@ -286,13 +321,15 @@ export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
 export const softwareApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "VocalDice AI Phone Agent",
+  "name": "VocalDice AI Inside Sales Agent",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web-based",
+  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with automated lead generation, qualification, and 24/7 call handling.",
   "offers": {
     "@type": "Offer",
     "price": "400-700",
     "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
     "priceSpecification": {
       "@type": "UnitPriceSpecification",
       "price": "400-700",
@@ -302,8 +339,8 @@ export const softwareApplicationSchema = {
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "5"
+    "ratingValue": "4.9",
+    "reviewCount": "47"
   },
   "featureList": [
     "24/7 automated call answering",

@@ -78,9 +78,9 @@ const Index = () => {
   return (
     <>
       <SEO 
-        title="AI Inside Sales Agent for Dubai Real Estate Brokerages"
-        description="Never miss a Dubai property lead again. AI Inside Sales Agent that answers calls in 30 seconds, qualifies Property Finder & Bayat leads, and books viewings 24/7. Built for Dubai real estate teams."
-        keywords="real estate call center Dubai, property finder lead follow up, bayut lead management, real estate answering service UAE, AI Inside Sales Agent Dubai, Dubai property lead qualification, automated real estate follow up"
+        title="AI Inside Sales Agent for Dubai Real Estate Agents"
+        description="AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with 24/7 automated call handling, lead qualification, and appointment booking in English and Arabic."
+        keywords="AI Inside Sales Agent Dubai, real estate lead generation Dubai, automated lead qualification, property agent tools UAE, 24/7 real estate call handling, Dubai property leads, real estate automation Dubai"
         url="https://vocaldice.com"
         schema={combinedSchema}
       />
