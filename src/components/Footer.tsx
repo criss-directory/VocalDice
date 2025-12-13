@@ -7,9 +7,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <img src={logoImage} alt="Vocaldice Logo" className="h-10 w-auto" />
             </div>
+            <p className="text-xs font-bold italic text-muted-foreground mb-4">@Innodice ventures PVT LTD</p>
             <p className="text-muted-foreground leading-relaxed">
               AI Inside Sales Agents for Dubai real estate teams. We help agents, teams, and brokerages close more deals by responding faster than their competitors 24/7.
             </p>
