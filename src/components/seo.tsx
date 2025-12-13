@@ -19,7 +19,7 @@ export default function SEO({
   type = "website",
   schema
 }: SEOProps) {
-  const fullTitle = `${title} | VocalDice - AI Phone Agent for Dubai Real Estate`;
+  const fullTitle = `${title} | VocalDice - AI Inside Sales Agent for Dubai Real Estate`;
   const siteName = "VocalDice";
   
   return (
