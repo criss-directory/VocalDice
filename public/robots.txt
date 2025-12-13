@@ -10,11 +10,12 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: *
+Allow: /
+
 Sitemap: https://www.vocaldice.com/sitemap.xml
 Host: https://www.vocaldice.com
 
-User-agent: *
-Allow: /
 
 # Block specific bots (optional)
 User-agent: AhrefsBot
