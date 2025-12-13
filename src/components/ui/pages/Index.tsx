@@ -78,9 +78,9 @@ const Index = () => {
   return (
     <>
       <SEO 
-        title="AI Phone Agent for Dubai Real Estate Brokerages"
-        description="Never miss a Dubai property lead again. AI phone agent that answers calls in 30 seconds, qualifies Property Finder & Bayut leads, and books viewings 24/7. Built for Dubai real estate teams."
-        keywords="real estate call center Dubai, property finder lead follow up, bayut lead management, real estate answering service UAE, AI phone agent Dubai, Dubai property lead qualification, automated real estate follow up"
+        title="AI Inside Sales Agent for Dubai Real Estate Brokerages"
+        description="Never miss a Dubai property lead again. AI Inside Sales Agent that answers calls in 30 seconds, qualifies Property Finder & Bayat leads, and books viewings 24/7. Built for Dubai real estate teams."
+        keywords="real estate call center Dubai, property finder lead follow up, bayut lead management, real estate answering service UAE, AI Inside Sales Agent Dubai, Dubai property lead qualification, automated real estate follow up"
         url="https://vocaldice.com"
         schema={combinedSchema}
       />
