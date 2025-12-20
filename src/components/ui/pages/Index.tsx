@@ -655,28 +655,28 @@ const Index = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 opacity-0 animate-fade-in-up [animation-delay:400ms]">
 
               <Card className="p-4 sm:p-6 bg-card/50 border-border/50 flex flex-col justify-center items-center min-h-[160px]">
-              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-white bg-clip-text text-transparent mb-2 leading-tight">
+              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent mb-2 leading-tight">
               120-150
               </div>
               <p className="text-sm text-muted-foreground text-center">Enquiries handled weekly per agent with zero missed calls.</p>
               </Card>
               
               <Card className="p-4 sm:p-6 bg-card/50 border-border/50 flex flex-col justify-center items-center min-h-[160px]">
-              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-white bg-clip-text text-transparent mb-2 leading-tight">
+              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent mb-2 leading-tight">
                   30-60%
                 </div>
                 <p className="text-sm text-muted-foreground text-center">More viewing bookings by capturing leads your team normally loses.</p>
               </Card>
               
               <Card className="p-4 sm:p-6 bg-card/50 border-border/50 flex flex-col justify-center items-center min-h-[160px]">
-              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-white bg-clip-text text-transparent mb-2 leading-tight">
+              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent mb-2 leading-tight">
                   24/7
                 </div>
                 <p className="text-sm text-muted-foreground text-center">Instant response during peak hours, evenings, and weekends.</p>
               </Card>
               
               <Card className="p-4 sm:p-6 bg-card/50 border-border/50 flex flex-col justify-center items-center min-h-[160px]">
-              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-black to-white bg-clip-text text-transparent mb-2 leading-tight">
+              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent mb-2 leading-tight">
                   ~60%
                 </div>
                 <p className="text-sm text-muted-foreground text-center">
