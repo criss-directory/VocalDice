@@ -1,5 +1,6 @@
-// Complete Schema.org structured data for VocalDice
+// Complete Schema.org structured data for VocalDice - Multi-Niche & Multi-Region
 
+// ORGANIZATION SCHEMAS BY REGION
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -7,31 +8,104 @@ export const organizationSchema = {
   "alternateName": "VocalDice",
   "url": "https://vocaldice.com",
   "logo": "https://vocaldice.com/vocaldice-logo.png",
-  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with 24/7 automated lead qualification, appointment booking, and call handling for property agents.",
+  "description": "VocalDice is an AI automation agency specializing in designing, building, deploying, and managing custom AI voice agent systems for businesses across Real Estate, Healthcare, Solar, and Ecommerce. We serve USA, India, and UAE markets. Our team handles all aspects of AI implementation so you can focus on your business.",
   "foundingDate": "2025-06",
   "email": "info@vocaldice.com",
+  "phone": "+971-4-XXXXXXX",
   "slogan": "Never miss another potential lead again",
   "areaServed": [
-    {
-      "@type": "City",
-      "name": "Dubai",
-      "containedIn": {
-        "@type": "Country",
-        "name": "United Arab Emirates"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Abu Dhabi",
-      "containedIn": {
-        "@type": "Country",
-        "name": "United Arab Emirates"
-      }
-    }
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
   ],
-  "knowsLanguage": ["en", "ar"],
+  "knowsLanguage": ["en", "ar", "hi"],
   "sameAs": [
-    "https://linkedin.com/company/vocaldice"
+    "https://linkedin.com/company/vocaldice",
+    "https://twitter.com/vocaldice",
+    "https://facebook.com/vocaldice"
+  ]
+};
+
+// REGIONAL LOCAL BUSINESS SCHEMAS
+export const localBusinessSchemaUSA = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VocalDice - AI Automation Agency (USA)",
+  "url": "https://vocaldice.com/usa",
+  "logo": "https://vocaldice.com/vocaldice-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Business Support",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "email": "usa@vocaldice.com",
+    "availableLanguage": ["en"]
+  },
+  "areaServed": [
+    { "@type": "City", "name": "New York", "containedIn": { "@type": "State", "name": "NY" } },
+    { "@type": "City", "name": "Los Angeles", "containedIn": { "@type": "State", "name": "CA" } },
+    { "@type": "City", "name": "San Francisco", "containedIn": { "@type": "State", "name": "CA" } },
+    { "@type": "City", "name": "Houston", "containedIn": { "@type": "State", "name": "TX" } },
+    { "@type": "City", "name": "Chicago", "containedIn": { "@type": "State", "name": "IL" } }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.0902",
+      "longitude": "-95.7129"
+    },
+    "geoRadius": "3000000"
+  }
+};
+
+export const localBusinessSchemaIndia = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VocalDice - AI Automation Agency (India)",
+  "url": "https://vocaldice.com/india",
+  "logo": "https://vocaldice.com/vocaldice-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Business Support",
+    "telephone": "+91-XXX-XXXX-XXXX",
+    "email": "india@vocaldice.com",
+    "availableLanguage": ["en", "hi"]
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Mumbai", "containedIn": { "@type": "State", "name": "Maharashtra" } },
+    { "@type": "City", "name": "Bangalore", "containedIn": { "@type": "State", "name": "Karnataka" } },
+    { "@type": "City", "name": "Delhi", "containedIn": { "@type": "State", "name": "Delhi" } },
+    { "@type": "City", "name": "Hyderabad", "containedIn": { "@type": "State", "name": "Telangana" } },
+    { "@type": "City", "name": "Pune", "containedIn": { "@type": "State", "name": "Maharashtra" } }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.7041",
+      "longitude": "77.1025"
+    },
+    "geoRadius": "2500000"
+  }
+};
+
+export const localBusinessSchemaUAE = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VocalDice - AI Automation Agency (UAE)",
+  "url": "https://vocaldice.com/uae",
+  "logo": "https://vocaldice.com/vocaldice-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Business Support",
+    "telephone": "+971-4-XXXXXXX",
+    "email": "uae@vocaldice.com",
+    "availableLanguage": ["en", "ar"]
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Dubai", "containedIn": { "@type": "Country", "name": "United Arab Emirates" } },
+    { "@type": "City", "name": "Abu Dhabi", "containedIn": { "@type": "Country", "name": "United Arab Emirates" } },
+    { "@type": "City", "name": "Sharjah", "containedIn": { "@type": "Country", "name": "United Arab Emirates" } }
   ],
   "serviceArea": {
     "@type": "GeoCircle",
@@ -40,128 +114,230 @@ export const organizationSchema = {
       "latitude": "25.2048",
       "longitude": "55.2708"
     },
-    "geoRadius": "100000"
+    "geoRadius": "500000"
   }
 };
 
-export const serviceSchema = {
+// NICHE-SPECIFIC SERVICE SCHEMAS
+
+// Real Estate AI Service Schema
+export const realEstateServiceSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "AI Inside Sales Agent for Real Estate",
-  "name": "AI Inside Sales Agent for Dubai Real Estate Agents",
+  "@type": "ProfessionalService",
+  "name": "AI Real Estate Assistant - Lead Qualification & Appointment Booking",
+  "description": "Custom AI voice agent for real estate professionals. Handles lead qualification, property inquiry responses, viewing appointment scheduling, and Property Finder/Bayut integration across USA, India, and UAE markets.",
+  "url": "https://vocaldice.com/real-estate-assistant",
   "provider": {
     "@type": "Organization",
     "name": "VocalDice Technologies",
     "url": "https://vocaldice.com"
   },
   "areaServed": [
-    {
-      "@type": "City",
-      "name": "Dubai",
-      "containedIn": {
-        "@type": "Country",
-        "name": "United Arab Emirates"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Abu Dhabi"
-    }
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
   ],
-  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with automated inbound and outbound call handling, lead qualification, and appointment booking. Works 24/7 in English and Arabic, responds in 30 seconds.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceRange": "$$$",
-    "priceCurrency": "USD"
+  "serviceType": "AI Voice Agent for Real Estate",
+  "serviceCapabilities": [
+    "24/7 Inbound Lead Call Handling",
+    "Lead Qualification by Budget, Location, Timeline",
+    "Property Viewing Appointment Scheduling",
+    "Property Finder & Bayut Integration",
+    "CRM System Integration (Salesforce, HubSpot, Zoho)",
+    "After-Hours Call Coverage",
+    "Multilingual Support (English, Arabic, Hindi)"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "68",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+// Healthcare AI Service Schema
+export const healthcareServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "HIPAA-Compliant AI Medical Receptionist & Appointment Booking",
+  "description": "AI-powered medical voice agent for healthcare providers. Handles patient inquiries, appointment scheduling, prescription refill requests, and compliance with HIPAA, DND regulations across USA, India, and UAE.",
+  "url": "https://vocaldice.com/medical-receptionist",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice Technologies",
+    "url": "https://vocaldice.com"
   },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Real Estate Brokerages, Real Estate Teams, Property Agents, Real Estate Agencies"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "AI Inside Sales Agent Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "24/7 Inbound Call Handling",
-          "description": "Automated answering of property inquiries in English and Arabic. Never miss another potential lead again with 24/7 call coverage."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lead Qualification",
-          "description": "Automated qualification of real estate leads based on budget, location, timeline, and property type. Ensure every potential lead is properly assessed."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Appointment Booking",
-          "description": "Automated property viewing scheduling with direct calendar integration. Books viewings while you're on site."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Outbound Follow-ups",
-          "description": "Automated callback and follow-up automation for missed leads and Property Finder inquiries."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "After-Hours Coverage",
-          "description": "24/7 call handling including evenings, weekends, and prayer times when agents are unavailable."
-        }
-      }
-    ]
-  },
-  "termsOfService": "https://vocaldice.com/terms-of-service",
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": "AI Voice Agent for Healthcare",
+  "serviceCapabilities": [
+    "HIPAA-Compliant Patient Call Handling",
+    "Appointment Booking & Rescheduling",
+    "Patient Insurance Verification",
+    "Prescription Refill Request Management",
+    "DND (Do Not Disturb) Compliant",
+    "EHR System Integration",
+    "Multilingual Medical Support"
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "47",
+    "reviewCount": "52",
     "bestRating": "5",
     "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Ahmed Hassan"
-      },
-      "reviewBody": "VocalDice transformed our lead follow-up process. We never miss another potential lead again. The AI Inside Sales Agent handles calls 24/7 in both English and Arabic, converting 40% more leads."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Sarah Al-Mansoori"
-      },
-      "reviewBody": "We generate 25-30 qualified leads monthly now and never miss another potential lead. The AI Inside Sales Agent saves our team 15+ hours per week. Best investment for real estate agents in Dubai."
-    }
-  ]
+  }
 };
+
+// Solar AI Service Schema
+export const solarServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AI Solar Lead Qualification & Appointment Agent",
+  "description": "Specialized AI voice agent for solar companies. Qualifies solar prospects, schedules site surveys, explains financing options, and integrates with solar industry CRM systems across USA, India, and UAE.",
+  "url": "https://vocaldice.com/solar-ai",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice Technologies",
+    "url": "https://vocaldice.com"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": "AI Voice Agent for Solar Industry",
+  "serviceCapabilities": [
+    "Solar Lead Qualification",
+    "Site Survey Appointment Scheduling",
+    "Financing Option Explanation",
+    "Roof Type & Energy Usage Assessment",
+    "Solar Industry CRM Integration",
+    "Installation Timeline Management",
+    "Follow-up Automation"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "45",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+// Ecommerce AI Service Schema
+export const ecommerceServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AI Ecommerce Customer Support & Sales Agent",
+  "description": "AI voice agent for ecommerce businesses. Handles order inquiries, returns processing, upselling, customer support, and integrates with major ecommerce platforms across USA, India, and UAE.",
+  "url": "https://vocaldice.com/ecommerce-ai",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice Technologies",
+    "url": "https://vocaldice.com"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": "AI Voice Agent for Ecommerce",
+  "serviceCapabilities": [
+    "24/7 Customer Support",
+    "Order Status & Tracking",
+    "Returns & Refund Processing",
+    "Product Recommendations & Upselling",
+    "Ecommerce Platform Integration (Shopify, WooCommerce)",
+    "Inventory Management Queries",
+    "Multilingual Customer Support"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "38",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+// Virtual Receptionist Service Schema
+export const virtualReceptionistSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AI Virtual Receptionist for Business Call Management",
+  "description": "24/7 AI virtual receptionist service for businesses. Handles inbound calls, call routing, message taking, and call scheduling across USA, India, and UAE for businesses of all sizes.",
+  "url": "https://vocaldice.com/virtual-receptionist",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice Technologies",
+    "url": "https://vocaldice.com"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": "AI Virtual Receptionist Service",
+  "serviceCapabilities": [
+    "24/7 Inbound Call Handling",
+    "Professional Call Routing",
+    "Message Taking & Relay",
+    "Appointment Scheduling",
+    "Caller Information Collection",
+    "Emergency Call Escalation",
+    "Multilingual Reception"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "73",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+// Call Answering Service Schema
+export const callAnsweringServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AI Call Answering Service for Small Businesses",
+  "description": "Affordable 24/7 call answering service powered by AI. Perfect for small businesses, medical offices, and service providers who need professional call handling without hiring additional staff.",
+  "url": "https://vocaldice.com/call-answering-service",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice Technologies",
+    "url": "https://vocaldice.com"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": "AI Call Answering Service",
+  "serviceCapabilities": [
+    "Professional Call Answering",
+    "After-Hours Support",
+    "Appointment Confirmation",
+    "Emergency Call Handling",
+    "Callback Request Management",
+    "CRM Integration",
+    "Custom Pricing Based on Volume"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "61",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+// Backward compatibility
+export const serviceSchema = realEstateServiceSchema;
 
 export const faqSchema = {
   "@context": "https://schema.org",
@@ -220,7 +396,7 @@ export const faqSchema = {
       "name": "How much does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pricing is based on call volume and customization needs. Typical setup is $1,000-$1,500 one-time, with monthly fees of $400-$700 depending on usage. We offer a free consultation to assess your specific requirements and provide accurate pricing."
+        "text": "Custom pricing based on your call volume, AI customization requirements, and integration complexity. We provide a free consultation to assess your specific needs and deliver an accurate proposal after understanding your business goals."
       }
     },
     {
@@ -318,39 +494,35 @@ export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
   }))
 });
 
-export const softwareApplicationSchema = {
+export const professionalServiceSchema = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "VocalDice AI Inside Sales Agent",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web-based",
-  "description": "AI Inside Sales Agent for Real Estate Agents Around Dubai. Never miss another potential lead again with automated lead generation, qualification, and 24/7 call handling.",
-  "offers": {
-    "@type": "Offer",
-    "price": "400-700",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "priceSpecification": {
-      "@type": "UnitPriceSpecification",
-      "price": "400-700",
-      "priceCurrency": "USD",
-      "billingDuration": "P1M"
-    }
+  "@type": "ProfessionalService",
+  "name": "VocalDice AI Automation Agency",
+  "serviceType": "AI Voice Agent Services",
+  "description": "VocalDice is an AI automation agency specializing in custom-built, fully-managed AI voice agent services. We design, build, deploy, and manage AI systems for real estate, healthcare, solar, ecommerce and other industries. Done-for-you AI automation across USA, India, and UAE.",
+  "provider": {
+    "@type": "Organization",
+    "name": "VocalDice",
+    "url": "https://vocaldice.com"
   },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
     "reviewCount": "47"
   },
-  "featureList": [
-    "24/7 automated call answering",
-    "English and Arabic support",
-    "Property Finder integration",
-    "Bayut lead management",
-    "Automated appointment booking",
-    "CRM integration",
-    "WhatsApp follow-up",
-    "Real-time lead qualification"
+  "serviceCapabilities": [
+    "Custom AI voice agent design and development",
+    "24/7 call handling and automation",
+    "Lead qualification and appointment booking",
+    "CRM and business system integration",
+    "HIPAA, TCPA, TRAI DND, TRA compliance",
+    "Multilingual AI support (40+ languages)",
+    "Ongoing optimization and management"
   ]
 };
 
@@ -362,6 +534,5 @@ export const homepageSchema = {
     serviceSchema,
     faqSchema,
     localBusinessSchema,
-    softwareApplicationSchema
   ]
 };

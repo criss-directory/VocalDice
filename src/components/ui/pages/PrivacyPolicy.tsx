@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/seo";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
@@ -14,7 +15,7 @@ const PrivacyPolicy = () => {
       <main className="container mx-auto px-4 py-24 sm:py-32">
         <div className="prose prose-invert max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-foreground">Privacy Policy</h1>
-          <p className="text-sm text-muted-foreground !mt-2">Last Updated: January 2025</p>
+          <p className="text-sm text-muted-foreground !mt-2">Last Updated: January 2026</p>
           <p>VocalDice (“we”, “our”, “us”) provides AI-powered calling and qualification services for real estate professionals. This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website, AI calling system, and related services.</p>
           <p>By using our services, you agree to this Privacy Policy.</p>
           <h3>Information We Collect</h3>
@@ -47,6 +48,16 @@ const PrivacyPolicy = () => {
           <p>Requests can be sent to info@vocaldice.com.</p>
           <h3>Policy Updates</h3>
           <p>We may update this Privacy Policy occasionally. Continued use of the service indicates acceptance.</p>
+
+          {/* Related Legal Documents */}
+          <div className="mt-12 pt-8 border-t border-border">
+            <h3>Related Legal Documents</h3>
+            <ul className="!list-none !pl-0">
+              <li><Link to="/terms-of-service" className="text-primary hover:text-primary/80 font-semibold">→ View our Terms of Service</Link></li>
+              <li><Link to="/data-security" className="text-primary hover:text-primary/80 font-semibold">→ Learn about Data Security & Compliance</Link></li>
+              <li><Link to="/" className="text-primary hover:text-primary/80 font-semibold">← Back to Home</Link></li>
+            </ul>
+          </div>
         </div>
       </main>
       <Footer />

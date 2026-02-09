@@ -13,18 +13,18 @@ const TermsOfService = () => {
       <main className="container mx-auto px-4 py-24 sm:py-32">
         <div className="prose prose-invert max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-foreground">Terms of Service</h1>
-          <p className="text-sm text-muted-foreground !mt-2">Last Updated: January 2025</p>
-          <p>These Terms of Service (“Terms”) govern your access to and use of the VocalDice AI calling and qualification platform. By using our services, you agree to these Terms.</p>
+          <p className="text-sm text-muted-foreground !mt-2">Last Updated: January 2026</p>
+          <p>These Terms of Service ("Terms") govern the engagement with VocalDice for our AI calling and qualification services. By engaging with us, you agree to these Terms.</p>
           <h4>1. Use of Service</h4>
           <p>You may use VocalDice only for lawful business purposes related to real estate operations. You agree not to use the AI agent for spam, violate telecommunication laws, provide misleading data, or attempt to reverse engineer our systems.</p>
           <h4>2. AI Agent Behaviour</h4>
           <p>You understand that AI responses are dynamically generated and VocalDice cannot guarantee 100% accuracy. You are responsible for reviewing summaries and leads. The AI does not provide legal or financial advice.</p>
           <h4>3. Account Responsibilities</h4>
           <p>You agree to provide accurate information, maintain control of your integrations, and ensure compliance with regional calling laws. You are responsible for all activity under your account.</p>
-          <h4>4. Subscription & Payment</h4>
-          <p>Fees are billed monthly or annually and are non-refundable. Late payments may result in service interruption.</p>
+          <h4>4. Service Agreement & Payment</h4>
+          <p>Service fees are billed monthly or annually and are non-refundable. Late payments may result in service interruption. This is a service engagement, not a software subscription.</p>
           <h4>5. Lead & Call Data</h4>
-          <p>You retain full ownership of your lead data, call summaries, and training materials. VocalDice retains rights to its platform logic and may use aggregate anonymized data to improve reliability.</p>
+          <p>You retain full ownership of your lead data, call summaries, and training materials. VocalDice retains rights to our AI system logic and may use aggregate anonymized data to improve service reliability.</p>
           <h4>6. Service Availability</h4>
           <p>We strive for maximum uptime but do not guarantee uninterrupted service due to maintenance or third-party outages.</p>
           <h4>7. Limitation of Liability</h4>

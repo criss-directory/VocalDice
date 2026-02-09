@@ -39,7 +39,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-4xl md:text-5xl mb-4 font-bold text-center">
-          How We Deploy Your AI Agent {" "}<br/>
+          How We Build, Deploy & Manage Your AI Agent {" "}<br/>
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             (7–14 Days, Zero Technical Work on Your Side)
           </span>

@@ -7,46 +7,57 @@ import {
 
 const faqs = [
   {
-    question: "How quickly can the AI agent be deployed?",
+    question: "Does the AI understand heavy Indian or Middle Eastern accents?",
     answer:
-      "Your AI ISA is deployed in 7–14 days. We build and train it on your listings, communities, objection handling, qualification rules, and buyer behaviour so it performs like a Dubai-experienced agent from day one. No technical setup required on your side.",
+      "Yes. Unlike generic US-based AI voice bots, VocalDice is specifically trained on regional dialects. It understands and speaks fluent Hinglish (Hindi + English) for markets like Mumbai, Delhi, and Bangalore, as well as Gulf Arabic and Neutral English for clients in Dubai, Saudi Arabia, and Bahrain. It handles fast-paced speech, interruptions, and colloquial phrases naturally just like a local agent.",
   },
   {
-    question: "Can the AI handle multiple languages?",
+    question: "Can I integrate this with Zoho, Salesforce, or my existing CRM?",
     answer:
-      "Yes. The AI handles English and Arabic naturally, and can switch languages based on the caller’s preference. If your brokerage deals with Russians, Indians, Pakistanis, or European investors, we can also configure accents and language variants as needed.",
+      "Absolutely. We provide native 1-click integrations with Zoho, Salesforce, HubSpot, and GoHighLevel. Whether you are a real estate agency in Hyderabad or a solar company in Abu Dhabi, the AI updates your leads, adds notes, and changes deal stages automatically after every call. Your CRM stays in sync 24/7 without manual data entry.",
   },
   {
-    question: "Will I get notified after each call?",
+    question: "Is this legal and compliant for cold calling in the UAE and India?",
     answer:
-      "Yes. After every interaction, you receive an instant summary via WhatsApp or your CRM with key details: caller name, budget, property interest, urgency level, and next steps. You stay in control without being on every call.",
+      "We prioritize compliance across all regions. Our system automatically handles DND (Do Not Disturb) scrubbing for India and adheres to TRA guidelines in the UAE. We configure the agent to only call opt-in leads and inbound inquiries, ensuring 100% compliance with local telecom regulations. Your business stays protected while maximizing outreach.",
   },
   {
-    question: "What happens if the AI can't answer a question?",
+    question: "How fast can I go live? Do I need a developer?",
     answer:
-      "The AI is programmed to recognize complex queries it can't handle. In those cases, it politely collects the caller's details, explains that you'll personally follow up, and sends you a detailed summary immediately.",
+      "You do not need a developer. Our White-Glove Onboarding gets you live in under 48 hours. We handle the script setup, voice cloning, and CRM connection end-to-end. You just provide your login credentials and lead list, and your AI agent starts qualifying leads immediately no technical knowledge required.",
   },
   {
-    question: "How much does it cost?",
+    question: "What happens if the AI doesn't know the answer?",
     answer:
-      "Pricing is customized based on your enquiry volume and requirements. Most agents find it costs less than hiring one junior team member, while delivering 24/7 availability and never missing a call. We'll discuss specifics during your strategy demo.",
+      "The AI is trained to handle unknowns gracefully. If a lead asks a complex question outside the script, the AI can either 'park' the question ('Great question, let me have a senior manager call you back with that detail') or instantly transfer the call to a human agent's mobile number for live handoff. You never miss an opportunity.",
   },
   {
-    question: "Is there a contract or long-term commitment?",
+    question: "Does it work with WhatsApp?",
     answer:
-      "We offer flexible month-to-month arrangements for qualified partners. Our focus is on delivering results, not locking you into long contracts. Most clients stay because they see immediate ROI.",
+      "Yes. In markets like India and the GCC, WhatsApp is the primary communication channel. Our AI automatically sends WhatsApp messages immediately after calls confirming appointment times, sending brochures, or following up if the lead didn't pick up. WhatsApp automation keeps your leads engaged and warm.",
   },
   {
-    question: "Does this replace my agents or support team?",
+    question: "Is VocalDice HIPAA-compliant for US healthcare practices?",
     answer:
-      "No, it supports them. The AI handles every inbound enquiry instantly so your agents can focus on viewings, negotiations, and closing. It’s like giving your team a 24/7 Inside Sales Assistant that never sleeps.",
+      "Yes. We've built and deployed our AI agents with full HIPAA-compliance for US healthcare providers. We encrypt all patient data in transit and at rest, maintain HIPAA-compliant audit logs, and can sign BAAs (Business Associate Agreements). All patient information, appointment details, and medical notes are stored securely on HIPAA-compliant servers in the US, and our team manages all compliance requirements.",
   },
   {
-    question: "Will it work with my CRM or WhatsApp?",
+    question: "Does VocalDice comply with TCPA regulations in the USA?",
     answer:
-      "Yes, We connect the AI to your existing workflow (GHL, CRM, pipelines, WhatsApp, or your manual workflow). You don’t need to change anything.",
+      "Yes, we ensure full TCPA compliance for all US calling. Our system automatically handles call consent management, do-not-call (DNC) scrubbing, and opt-out processing. All marketing calls include proper identification and disclosure, and we maintain complete audit logs of every call for compliance verification. You can call with confidence.",
+  },
+  {
+    question: "Is the AI TRAI DND-compliant for India?",
+    answer:
+      "Yes, fully compliant. We integrate with the TRAI Do Not Disturb (DND) registry to automatically exclude opted-out numbers from your campaigns. Our system also handles TRAI regulations on calling hours and promotional content. You can scale outreach in India without compliance risk.",
+  },
+  {
+    question: "Where is customer data stored, and does it meet UAE regulations?",
+    answer:
+      "All data for UAE customers is stored on servers physically located in the GCC region with full TRA (Telecommunications Regulatory Authority) compliance. We maintain data localization for all personal information and ensure compliance with UAE data protection and privacy regulations. Your business stays regulated and secure.",
   },
 ];
+
 
 const FAQs = () => {
   return (
@@ -59,7 +70,7 @@ const FAQs = () => {
           </span>
         </h2>
         <p className="text-xl text-muted-foreground text-center mb-16 opacity-0 animate-fade-in-up [animation-delay:200ms]">
-          Everything you need to know about our AI sales agent
+          Get answers about AI voice agents for India, UAE, real estate, and solar sales. Compliance, integrations, and setup details.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">

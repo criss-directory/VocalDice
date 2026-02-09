@@ -1,80 +1,124 @@
 import { Card } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Mohammed Hassan",
-    role: "Real Estate Team Leader, Dubai Marina", // Team Leader (High Volume)
-    text: "We get 80–100 enquiries per day from PF and Bayut. My team used to miss at least half. The AI now replies instantly and books viewings even when we’re all out on showings. It feels like having 5 extra agents working 24/7.",
-    rating: 4,
+    industry: "Real Estate",
+    headline: "The 'Site Visit' Dilemma",
+    problem: "Missing calls while showing properties leads to lost buyers.",
+    solution: "AI answers instantly, qualifies leads, and schedules viewings 24/7.",
+    outcome: "100% Lead Response Rate",
+    link: "Detailed Case Study",
+    clientName: "Mohammed Hassan",
+    clientRole: "Real Estate Team Leader."
   },
   {
-    name: "Elena Rodriguez",
-    role: "Luxury Property Specialist, Palm Jumeirah", // Luxury Property Specialist
-    text: "My clients are mostly international investors. They expect fast replies. The AI handles first contact, asks all the right questions, and qualifies them before I even look at the lead. My close rate went up massively.",
-    rating: 5,
+    industry: "Solar & Home Services",
+    headline: "The 'Cold Calling' Burnout",
+    problem: "Manual follow-ups waste time and cause quote delivery delays.",
+    solution: "AI qualifies leads, sends summaries, and schedules consultations automatically.",
+    outcome: "40% More Quote Completions",
+    link: "Detailed Case Study",
+    clientName: "James Rodriguez",
+    clientRole: "Sales Director, Solar Industry."
   },
   {
-    name: "Rajesh Kumar",
-    role: "Independent Agent", // Independent Agent
-    text: "I handle Palm Jumeirah and Marina listings. I used to lose buyers just because I couldn’t answer the phone while showing a property. The AI qualifies buyers instantly and schedules viewings without me lifting a finger.",
-    rating: 4,
-  },
-  {
-    name: "Ahmed Al-Mansouri",
-    role: "Senior Agent, Dubai Properties", // Senior Agent
-    text: "Our conversion rate jumped by around 40% in the first month. The AI handles qualification and WhatsApp summaries while I focus on closing. No more chasing low-quality leads.",
-    rating: 5,
-  },
-  {
-    name: "Sara Al Khatib",
-    role: "Brokerage Director, Downtown Dubai", // Brokerage Director
-    text: "We manage a 50-agent team. This AI assistant standardised qualification across all agents. Every enquiry gets the same fast, professional response. We scaled without hiring more ISAs.",
-    rating: 5,
+    industry: "Healthcare",
+    headline: "The 'Empty Slot' Revenue Leak",
+    problem: "Missed confirmations cause 15-20% no-show rates, wasting revenue.",
+    solution: "AI sends reminders, confirmations, and reschedules cancellations automatically.",
+    outcome: "35% Reduction in No-Shows",
+    link: "Detailed Case Study",
+    clientName: "Dr. Priya Singh",
+    clientRole: "Clinic Director, Medical Center."
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="py-24 overflow-hidden bg-dark-surface/30">
-      <div className="container mx-auto px-4 mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 opacity-0 animate-fade-in-up">
-          Trusted by Dubai's{" "}
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Top Performers
-          </span>
-        </h2>
-        <p className="text-m md:text-lg text-center mb-10 opacity-0 animate-fade-in-up [animation-delay:200ms] text-muted-foreground max-w-2xl mx-auto">
-          See what real estate professionals are saying
-        </p>
-      </div>
+    <section className="py-24 bg-dark-surface/30">
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Discover why our clients love working with us. Read their testimonials about our dedication to excellence, innovative solutions, and exceptional customer service.
+          </p>
+        </motion.div>
 
-      <div className="relative">
-        <div className="flex gap-6 animate-scroll animation-50ms linear infinite">
-          {[...testimonials, ...testimonials].map((testimonial, index) => (
-            <Card
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <motion.div
               key={index}
-              className="flex-shrink-0 w-[400px] p-6 bg-card border-border/50 hover:border-primary/50 transition-all"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
-              <div className="flex gap-1 mb-4">
-                {[...Array(Math.floor(testimonial.rating))].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-foreground mb-6 leading-relaxed">
-                "{testimonial.text}"
-              </p>
-              <div>
-                <p className="font-semibold text-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-              </div>
-            </Card>
+              <Card className="h-full p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                {/* Industry Badge */}
+                <div className="inline-block mb-4 w-fit">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-primary/20 to-accent/20 text-primary">
+                    {testimonial.industry}
+                  </span>
+                </div>
+
+                {/* Headline */}
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {testimonial.headline}
+                </h3>
+
+                {/* Problem Section */}
+                <div className="mb-6">
+                  <p className="text-sm font-semibold text-primary/80 mb-2">The Problem</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {testimonial.problem}
+                  </p>
+                </div>
+
+                {/* Solution Section */}
+                <div className="mb-6">
+                  <p className="text-sm font-semibold text-primary/80 mb-2">Our Solution</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {testimonial.solution}
+                  </p>
+                </div>
+
+                {/* Outcome Section */}
+                <div className="mb-8">
+                  <p className="text-sm font-semibold text-primary/80 mb-2">The Outcome</p>
+                  <p className="text-white font-semibold text-lg">
+                    {testimonial.outcome}
+                  </p>
+                </div>
+
+                {/* Link */}
+                <Link to="#" className="text-primary hover:text-accent transition-colors flex items-center gap-2 font-semibold mb-6">
+                  {testimonial.link}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+
+                {/* Client Info */}
+                <div className="pt-6 border-t border-border/30 mt-auto">
+                  <p className="font-semibold text-foreground">{testimonial.clientName}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.clientRole}</p>
+                </div>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
-      <p className="text-center text-muted-foreground text-sm mt-12 container mx-auto px-4">
-        Used by Dubai agents closing Marina, JVC, Business Bay, Palm Jumeirah, and international investor leads.
-      </p>
     </section>
   );
 };
