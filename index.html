@@ -1,50 +1,89 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google Analytics -->
+    <!-- Site Identity & Language -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="VocalDice" />
+    
+    <!-- Core SEO -->
+    <meta name="author" content="VocalDice" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+
+    <!-- Global Title & Description -->
+    <title>VocalDice | AI Automation Agency - AI Receptionist & Call Answering Services</title>
+    <meta name="description" content="VocalDice is a done-for-you AI automation agency that designs, deploys, and manages AI receptionists and call answering systems for real estate, healthcare, solar, and ecommerce businesses worldwide. Serving USA, India, and UAE markets." />
+    <meta name="keywords" content="AI voice agent, AI receptionist, call answering service, appointment booking, lead qualification, AI automation agency, virtual assistant, customer service automation" />
+
+    <!-- Canonical URL & Alternate Regions -->
+    <link rel="canonical" href="https://vocaldice.com" />
+    <link rel="alternate" hrefLang="en-US" href="https://vocaldice.com" />
+    <link rel="alternate" hrefLang="en-IN" href="https://vocaldice.com/in" />
+    <link rel="alternate" hrefLang="en-AE" href="https://vocaldice.com/ae" />
+    <link rel="alternate" hrefLang="x-default" href="https://vocaldice.com" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="VocalDice | AI Automation Agency - AI Receptionist & Call Services" />
+    <meta property="og:description" content="Done-for-you AI receptionist and call automation for real estate, healthcare, solar, and ecommerce. Deploy and manage 24/7 AI agents across USA, India, and UAE." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vocaldice.com" />
+    <meta property="og:site_name" content="VocalDice" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_IN" />
+    <meta property="og:locale:alternate" content="ar_AE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VocalDice | AI Automation Agency" />
+    <meta name="twitter:description" content="AI automation agency building and managing AI receptionists for high-intent businesses across multiple industries and regions." />
+    <meta name="twitter:creator" content="@vocaldice" />
+    <meta name="twitter:site" content="@vocaldice" />
+
+    <!-- Geo-Targeting -->
+    <meta name="geo.region" content="US,IN,AE" />
+    <meta name="geo.position" content="37.0902;-95.7129" />
+    <meta name="icbm" content="37.0902,-95.7129" />
+
+    <!-- Icons & Branding -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0B0B0B" />
+
+    <!-- Performance & Resource Hints -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="prefetch" href="/sitemap.xml" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en-US" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+
+    <!-- Analytics & Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL68P3R2QE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-RL68P3R2QE');
+      gtag('config', 'G-RL68P3R2QE', {
+        'page_path': window.location.pathname,
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
-
-    <!-- Core Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="VocalDice" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Global SEO Identity (AGENCY-FIRST, MULTI-GEO) -->
-    <title>VocalDice | AI Automation Agency - AI Receptionist & Call Answering Services</title>
-
-    <meta
-      name="description"
-      content="VocalDice is a done-for-you AI automation agency that designs, deploys, and manages AI receptionists and call answering systems for real estate, healthcare, solar, and ecommerce businesses worldwide. Serving USA, India, and UAE markets."
-    />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="VocalDice | AI Automation Agency - AI Receptionist & Call Services" />
-    <meta
-      property="og:description"
-      content="Done-for-you AI receptionist and call automation for real estate, healthcare, solar, and ecommerce. Deploy and manage 24/7 AI agents across USA, India, and UAE."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="VocalDice" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VocalDice | AI Automation Agency" />
-    <meta
-      name="twitter:description"
-      content="AI automation agency building and managing AI receptionists for high-intent businesses across multiple industries and regions."
-    />
-
-    <!-- Performance & Organization Hints -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <meta name="theme-color" content="#0B0B0B" />
-
   </head>
 
   <body>
